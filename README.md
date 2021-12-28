@@ -1,6 +1,6 @@
 # Modular Plugin
 
-Some implementation of [my plugin generator](https://github.com/AhmedNourJamalElDin/my-plugin-generator) plugin.
+An implementation of [my plugin generator](https://github.com/AhmedNourJamalElDin/my-plugin-generator) plugin.
 
 This plugin helps you in:
 
