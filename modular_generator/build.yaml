@@ -1,0 +1,14 @@
+builders:
+  modular_builder:
+    import: "package:modular_generator/register_module_builder.dart"
+    builder_factories: [ "registerModuleBuilder" ]
+    build_extensions: { ".dart": [ ".modular.json" ] }
+    auto_apply: dependents
+    runs_before: [ "modular_generator|modular_registeration_builder" ]
+    build_to: cache
+  modular_registeration_builder:
+    import: "package:modular_generator/registration_module_builder.dart"
+    builder_factories: [ "registrationModuleBuilder" ]
+    build_extensions: { ".dart": [ ".module.g.dart" ] }
+    auto_apply: dependents
+    build_to: source
